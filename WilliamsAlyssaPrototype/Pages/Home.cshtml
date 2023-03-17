@@ -1,6 +1,115 @@
-﻿@page
+﻿@page "/"
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
+
+@*Header Row - Image & Intro-Text/Call-To-Action*@
+
+<div class="row header">
+    <div class="col-sm-12 headertextbkgrnd">
+        <div class="headertxt">
+            <h1>
+                Jesse James Lawncare
+            </h1>
+            <h3>
+                We are family-owned and operated and strive to provide the best service for Tulsa.
+            </h3>
+            <br />
+            <button type="button" class="btn btn-success btn-lg">Request a quote today!</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4 imgcontainer">
+        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Suspendisse ante mauris, tincidunt non justo at, ornare gravida ex. 
+            Aliquam vulputate id turpis non iaculis. Cras a magna mattis, elementum lacus at, dignissim lacus. 
+        </p>
+    </div>
+    <div class="col-sm-4 imgcontainer">
+        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse ante mauris, tincidunt non justo at, ornare gravida ex.
+            Aliquam vulputate id turpis non iaculis. Cras a magna mattis, elementum lacus at, dignissim lacus.
+        </p>
+    </div>
+    <div class="col-sm-4 imgcontainer">
+        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse ante mauris, tincidunt non justo at, ornare gravida ex.
+            Aliquam vulputate id turpis non iaculis. Cras a magna mattis, elementum lacus at, dignissim lacus.
+        </p>
+    </div>
+
+</div>
+
+<div class="row carouselbackgrnd">
+    <div class="col-sm-12">
+        @* The name of the ID must be unique on the page. No spaces allowed in the name. *@
+        @* The "slide" class is the visual affect when the images transition from
+        one to another. *@
+        <div id="jjlawncarecarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+            @* Indicators/Dots *@
+            <div class="carousel-indicators">
+                @* Add a button tag for each picture in your carousel.
+                Only ONE of the buttons should have a class="active".
+
+                The buttons are zero-index-based so the first image
+                has a data-bs-slide-to of '0', the 2nd image is '1', etc. *@
+                <button type="button" data-bs-target="#jjlawncarecarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#jjlawncarecarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#jjlawncarecarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            @* The slideshow/carousel  *@
+            <div class="carousel-inner">
+                @* Only one of the images should be 'active' and it should correspond
+                to the images. *@
+
+                @* Duplicate the div because without the 'active' for any other images. *@
+                <div class="carousel-item active">
+                    <img src="~/images/before-after-0.png" alt="Mowing Before and After Picture" class="img-fluid d-block mx-auto" />
+                @*    <div class="my-carousel-caption">
+                        <h5>Check out our Work!</h5>
+                        <p>
+                            Lorem ipsum dolor
+                        </p>
+                    </div>*@
+                </div>
+
+                <div class="carousel-item">
+                    <img src="~/images/Before-After-1.png" alt="Leave Cleanup Before and After Picture " class="img-fluid d-block mx-auto" />
+                </div>
+
+                <div class="carousel-item">
+                    <img src="~/images/Before-After-2.png" alt="Mowing Before and After Picture" class="img-fluid d-block mx-auto" />
+                </div>
+
+            </div>
+
+            @* Left and right controls/icons 
+            @* The data-bs-target has to be the name used in the ID of the carousel
+            with a '#' in front of the name.*@
+            <button class="carousel-control-prev" type="button" data-bs-target="#jjlawncarecarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#jjlawncarecarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 
