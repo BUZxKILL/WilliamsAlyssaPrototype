@@ -134,5 +134,9 @@ body {
 /*About Us Page*/
 
 .videocontainer {
+    border: 1px solid black;
+    display: flex;
     width: 50rem;
+    justify-content: center;
+    align-items: center;
 }
