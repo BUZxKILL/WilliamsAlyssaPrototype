@@ -13,41 +13,72 @@
                 Jesse James Lawncare
             </h1>
             <h3>
-                We are family-owned and operated and strive to provide the best service for Tulsa.
+                Family-Owned and Operated Lawn Care Services for Tulsa
             </h3>
             <br />
-            <button type="button" class="btn btn-success btn-lg">Request a quote today!</button>
+            <button type="button" class="btn-success btn-lg">Request a quote today!</button>
         </div>
     </div>
 </div>
 
+@*Divider for next section w/ images*@
+
+<div class="row whydivider">
+
+    <h2 class="secondtitle">Why Choose Us?</h2>
+
+</div>
+
+
+@* 1 Row - 3 columns 4 wide for images & text under Why Choose Us?*@
+
 <div class="row">
     <div class="col-sm-4 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
+        <img src="images/Mower.jpg" alt="Lawn Mower" class="img-fluid" />
+
+        <h4>
+            Professional Grade Equipment
+        </h4>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Suspendisse ante mauris, tincidunt non justo at, ornare gravida ex. 
-            Aliquam vulputate id turpis non iaculis. Cras a magna mattis, elementum lacus at, dignissim lacus. 
+            We understand that your time and how you spend your money is important. That is why we use professional level equipment to get the job done in a timely and efficient manner.
         </p>
     </div>
     <div class="col-sm-4 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
+        <img src="images/Seasons.jpg" alt="Changing Seasons" class="img-fluid" />
+        <h4>
+            Services for Every Season
+        </h4>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse ante mauris, tincidunt non justo at, ornare gravida ex.
-            Aliquam vulputate id turpis non iaculis. Cras a magna mattis, elementum lacus at, dignissim lacus.
+            We offer services for all of your lawn care needs for every season. Whether it is mowing your grass in the summer, cleaning out your gutters in the spring,
+            cleaning up your leaves in the fall, or hanging up your christmas lights in the winter - we are here for you!
         </p>
     </div>
     <div class="col-sm-4 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
+
+        <img src="images/Schedule.jpg" alt="Woman Scheduling" class="img-fluid" />
+        <h4>
+            Flexible Scheduling
+        </h4>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse ante mauris, tincidunt non justo at, ornare gravida ex.
-            Aliquam vulputate id turpis non iaculis. Cras a magna mattis, elementum lacus at, dignissim lacus.
+            Schedule your services with us on a bi-weekly, weekly, and even monthly for some of our services. Don't want to be on a schedule?
+            That works for us! We can perform most services on an as-needed basis.
         </p>
     </div>
 
 </div>
+
+@*Second Call to Action Button - link to services page*@
+
+<div class="row servicesbanner">
+    <div class="col-sm-12">
+        <button type="button" class ="btn btn-success btn-lg my-homebtn">
+            <h4> Check Out Our Services </h4>
+        </button>
+        
+    </div>
+</div>
+
+@*Carousel - Before & After Pictures*@
 
 <div class="row carouselbackgrnd">
     <div class="col-sm-12">
@@ -76,12 +107,7 @@
                 @* Duplicate the div because without the 'active' for any other images. *@
                 <div class="carousel-item active">
                     <img src="~/images/before-after-0.png" alt="Mowing Before and After Picture" class="img-fluid d-block mx-auto" />
-                @*    <div class="my-carousel-caption">
-                        <h5>Check out our Work!</h5>
-                        <p>
-                            Lorem ipsum dolor
-                        </p>
-                    </div>*@
+
                 </div>
 
                 <div class="carousel-item">
@@ -94,7 +120,7 @@
 
             </div>
 
-            @* Left and right controls/icons 
+            @* Left and right controls/icons
             @* The data-bs-target has to be the name used in the ID of the carousel
             with a '#' in front of the name.*@
             <button class="carousel-control-prev" type="button" data-bs-target="#jjlawncarecarousel" data-bs-slide="prev">

@@ -1,16 +1,22 @@
+
+
+/*Home & _Layout Pages*/
+html {
+    height: 100%;
+}
+
 body {
     margin-bottom: 60px;
     background-color: #FFFFFF;
+    height: 100%;
 }
 
-
-.my-bg-light {
-    background-color: #3E6453;
-    padding-bottom: 0;
+.logoimg {
+    width: 100%;
 }
 
 .logocontainer {
-    width: 18rem;
+    width: 11rem;
     padding: 0;
 }
 
@@ -22,36 +28,27 @@ body {
     color: #285441 !important;
 }
 
-.carouselbackgrnd {
-    background-color: #E1E1C3;
-    min-height: 20rem;
-}
-
-.carousel-indicators [data-bs-target] {
+.my-footer {
     background-color: #3E6453;
+    text-align: center;
+    display: flex;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.contactinfo {
+    justify-content: center;
+    color: white;
+}
+
+/*.footerlinks {
+    border: 1px solid black; 
+    color: white;
+}*/
+
+.my-bg-light {
     background-color: #3E6453;
-    width: 3.25em;
-    height: 3.25em;
-    border-radius: 50%;
-    top: calc(50% - 1.625em);
+    padding-bottom: 0;
 }
 
-.carousel-control-next {
-    right: 5%;
-}
-
-.carousel-control-prev {
-    left: 5%;
-}
-/*
-.my-carousel-caption {
-    background-color: black;
-    opacity: .6;
-}
-*/
 .header {
     background-image: url('../images/header.jpg');
     background-size: cover;
@@ -74,7 +71,57 @@ body {
     color: white;
 }
 
+.whydivider {
+    background-color: #293748;
+    text-align: center;
+    color: white;
+}
+
+.my-homebtn {
+    margin-top: 1rem;
+    width: 80rem;
+}
+
+.secondtitle {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.servicesbanner {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.carouselbackgrnd {
+    /*background-color: #E1E1C3;*/
+    min-height: 20rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: white;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: #3E6453;
+    width: 3.25em;
+    height: 3.25em;
+    border-radius: 50%;
+    top: calc(50% - 1.625em);
+}
+
+.carousel-control-next {
+    right: 5%;
+}
+
+.carousel-control-prev {
+    left: 5%;
+}
+
 .imgcontainer {
+    margin-top: 1rem;
 }
 
 .servicesdivider {
@@ -82,4 +129,10 @@ body {
     height: 5rem;
     margin-top: 2rem;
     text-align: center;
+}
+
+/*About Us Page*/
+
+.videocontainer {
+    width: 50rem;
 }
