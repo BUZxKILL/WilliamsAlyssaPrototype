@@ -1,6 +1,7 @@
 
 
 /*Home & _Layout Pages*/
+
 html {
     height: 100%;
 }
@@ -9,6 +10,15 @@ body {
     margin-bottom: 60px;
     background-color: #FFFFFF;
     height: 100%;
+}
+
+.my-nav-item {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .logoimg {
@@ -32,6 +42,7 @@ body {
     background-color: #3E6453;
     text-align: center;
     display: flex;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .contactinfo {
@@ -62,6 +73,7 @@ body {
 }
 
 .headertxt {
+    font-family: 'Oleo Script', cursive;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -77,27 +89,34 @@ body {
     color: white;
 }
 
-.my-homebtn {
-    margin-top: 1rem;
-    width: 80rem;
-}
-
 .secondtitle {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-family: 'Oleo Script', cursive;
 }
 
-.servicesbanner {
+.hometextheader {
+    font-family: 'Oleo Script', cursive;
+}
+
+.homeservicesbanner {
+    display: flex;
+    align-items: center;
+    background-color: #293748;
     color: white;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    height: 6.5rem;
+    font-family: 'Oleo Script', cursive;
 }
 
 .carouselbackgrnd {
-    /*background-color: #E1E1C3;*/
+    display: flex;
     min-height: 20rem;
+}
+
+.carouselcol {
+    padding: 0;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -106,37 +125,123 @@ body {
 
 .carousel-control-prev, .carousel-control-next {
     background-color: #3E6453;
-    width: 3.25em;
-    height: 3.25em;
-    border-radius: 50%;
-    top: calc(50% - 1.625em);
+    width: 11.25rem;
+    height: 33.75rem;
 }
 
 .carousel-control-next {
-    right: 5%;
+    right: .01%;
 }
 
 .carousel-control-prev {
-    left: 5%;
+    left: .01%;
 }
 
-.imgcontainer {
-    margin-top: 1rem;
+
+/*Services Page*/
+.servicesheader {
+    background-color: #293748;
+    color: white;
 }
 
-.servicesdivider {
-    background-color: #3E6453;
-    height: 5rem;
-    margin-top: 2rem;
+.servicesheadertxt {
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 40px;
+    font-family: 'Oleo Script', cursive;
+}
+
+
+.filterrow {
+    background-color: #293748;
+    color: white;
+    display: flex;
+    padding: 1rem;
+}
+
+
+.servicesimgcontainer {
+    margin-top: 1rem;
+    background-color: #3E6453;
+    color: white;
+    padding: 1rem;
+}
+
+.servicetxt {
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 /*About Us Page*/
+.aboutustitle {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Oleo Script', cursive;
+}
 
-.videocontainer {
-    border: 1px solid black;
+.aboutusheader {
+    margin-bottom: 2rem;
+    background-color: #293748;
+    text-align: center;
+    color: white;
+}
+
+.Ownerscontainer {
     display: flex;
-    width: 50rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ownertitle {
+    background-color: #3E6453;
+    color: white;
+    width: 40rem;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.communitytitle {
+    background-color: #3E6453;
+    color: white;
+    width: 40rem;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.communitycontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*.youtube {
+    text-align: center;
+    background-color: #3E6453;
+    color: white;
+    width: 15rem;
+}
+*/
+.videocontainer {
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.aboutusdivider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #293748;
+    text-align: center;
+    color: white;
+    height: 4rem;
+    font-family: 'Oleo Script', cursive;
 }

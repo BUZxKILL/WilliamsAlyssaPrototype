@@ -1,19 +1,22 @@
 ﻿@page
 @model WilliamsAlyssaPrototype.Pages.AboutUsModel
 @{
+    ViewData["Title"] = "About Us";
 }
 
+@*Row with a heading and 2 column 6  wide for owner information/picture*@
+
 <div class="row">
-    <div class="col-sm-6">
+    <div class="aboutusheader">
+        <h2 class="aboutustitle">About Us</h2>
+    </div>
 
-        <h2>
-            About Us
-        </h2>
-
+    <div class="col-sm-6 ">
         <img src="images/Owners2.jpg" alt="Owners of Jesse James Lawncare" class="img-fluid" />
     </div>
-    <div class="col-sm-6">
-        <p>
+    <div class="col-sm-6 Ownerscontainer">
+        <h2 class="ownertitle">Meet the Owners</h2>
+        <p class="aboutustext">
             Jesse James Lawn Care was started by brothers Jesse and Dylan (left to right). They both have a passion for lawn care and wanted to provide an affordable and reliable
             lawncare service to the Tulsa community. Why is it called Jesse James Lawncare? Simple - James is Jesse's middle name and Jesse James is a memorable name!
         </p>
@@ -21,45 +24,55 @@
 
 </div>
 
+@*Row with 2 column 6  wide for community information/picture*@
 <div class="row">
-    <div class="col-sm-6">
-        <p>
-            Not only do they maintain lawns through Jesse James Lawncare, but they have devoted time to servicing over-grown lawns for people within their community. These jobs are typically
-            require a major cleanup. They do these jobs free of charge and post them to their individual Youtube Channels. Check out the video below of one of their largest jobs they did.
-
-            <br />
-            <br />
-
-            <h6>Check out their Youtube Channels:</h6>
-            <h6>Big Dylan Lawn Care</h6>
-            <h6>Jayy's Lawn Obsession</h6>
-        </p>
-
-        <br />
-
-        <h5>Do you know anyone in need that could use a free lawn cleanup? Contact us and we will reach out!</h5>
-    </div>
-
-    <div class="col-sm-6">
-
-        <h2>
+    <div class="col-sm-6 communitycontainer ">
+        <h2 class="communitytitle">
             Community Work
         </h2>
+
+        <p class="aboutustext">
+            Not only do they maintain lawns through Jesse James Lawncare, but they have devoted time to servicing over-grown lawns for people within their community. These jobs typically
+            require a major cleanup. They do these jobs free of charge and post them to their individual Youtube Channels. Check out the videos below of one of their largest jobs they did.
+        </p>
+
+     @*   <div class="youtube">
+            <h6>Check out their Youtube Channels:</h6>
+            <h6>Big Dylan Lawn Care</h6>
+            <h6>Jayys Lawn Obsession</h6>
+        </div>*@
+
+    </div>
+    <div class="col-sm-6">
+        
         <img src="images/Leaves.jpg" alt="Leaf Pile" class="img-fluid" />
 
     </div>
 
 </div>
 
-@*Youtube Video*@
-<div class="row ">
-    <div class="col-sm-12 videocontainer">
-        @* 21:9 aspect ratio *@
-        <div class="ratio ratio-16x9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fAI3Cdd3gYw" title="YouTube video player"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ @*Divider - 1 ro1 12 columns wide*@
 
+<div class="row aboutusdivider">
+    <div class="col-sm-12">
+        <h5>Do you know anyone in need that could use a free lawn cleanup? Contact us and we will reach out!</h5>
+    </div>
+</div>
+
+@*Youtube Videos*@
+<div class="row videocontainer">
+    <div class="col-sm-6">
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fAI3Cdd3gYw" title="Big Dylan Lawncare Video"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4E3392aPsDo" title="Jayys Lawn Obsession Video"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
 </div>
+
 

@@ -1,90 +1,142 @@
 ﻿@page
 @model WilliamsAlyssaPrototype.Pages.ServicesModel
 @{
+    ViewData["Title"] = "Services";
 }
 
-<div class="row">
-    <div class="col-sm-12 servicesdivider">
-        <h3>Divider Row with text to intro services</h3>
+
+@*Services Header*@
+
+<div class="row servicesheader">
+    <div class="col-sm-12">
+        <h2 class="servicesheadertxt">Our Services</h2>
+    </div>
+</div>
+
+
+
+@*Filter Row - with filter button that opens up filter forms*@
+
+<div class="row filterrow">
+    <div class="col-sm-3">
+        <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#filter" aria-expanded="false" aria-controls="filter">
+            <img src="~/images/filter.svg" alt="Filter" class="img-fluid" />
+        </button>
+    </div>
+    <div class="collapse col-sm-3 servicetxt" id="filter">
+        <h6 class="servicetxt">Type of Service</h6>
+        <form>
+            <input type="checkbox" /> Scheduled
+            <br />
+            <input type="checkbox" /> As-Needed
+        </form>
+    </div>
+
+    <div class="collapse col-sm-3 servicetxt" id="filter">
+        <h6>Frequency of Service</h6>
+        <form>
+            <input type="checkbox" /> Weekly
+            <br />
+            <input type="checkbox" /> Bi-Weekly
+            <br />
+            <input type="checkbox" /> Monthly
+        </form>
+    </div>
+    <div class="collapse col-sm-3 servicetxt" id="filter">
+        <h6>Season</h6>
+        <form>
+            <input type="checkbox" /> Spring
+            <br />
+            <input type="checkbox" /> Summer
+            <br />
+            <input type="checkbox" /> Fall
+            <br />
+            <input type="checkbox" /> Winter
+        </form>
     </div>
 
 </div>
 
-<div class="row">
-    <div class="col-sm-12 servicesdivider">
-        <h3>Row for Filters for Services</h3>
-    </div>
-
-</div>
-
-@*Rows for Services - two rows w/ two  4 columns wide & one row with two 6 columns wide *@
+@*Services Row *@
 
 <div class="row">
-    <div class="col-sm-3 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-    </div>
-    <div class="col-sm-3 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-    </div>
-    <div class="col-sm-3 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-    </div>
-    <div class="col-sm-3 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-    </div>
+    <div class="col-sm-3 servicesimgcontainer">
+        <img src="~/images/Full Service Mow.jpg" alt="Full Service Mow" class="img-fluid" />
+        <h5 class="text-center">
+            Full-Service Mow
+        </h5>
+        <div>
+            <ul class="list-group servicetxt">
+                <li class="list-group-item list-group-item-secondary"> Includes cut/weed-eating, edging, trimming, and blowing</li>
+                <li class="list-group-item list-group-item-secondary"><b>Type of Service:</b> Scheduled, Ad-hoc</li>
+                <li class="list-group-item list-group-item-secondary"><b>Schedule Frequency:</b> Weekly, Bi-weekly</li>
+                <li class="list-group-item list-group-item-secondary"><b>Season:</b> Spring, Summer</li>
+                <li class="list-group-item list-group-item-secondary"><b>Price:</b> $50+ </li>
+            </ul>
+        </div>
 
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-sm-3 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-    </div>
-    <div class="col-sm-3 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-    </div>
-    <div class="col-sm-3 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-    </div>
-    <div class="col-sm-3 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-    </div>
 
-</div>
-<div class="row">
-    <div class="col-sm-3 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+@* <div class="col-sm-3 servicesimgcontainer">
+        <img src="~/images/Full Service Mow.jpg" alt="Full Service Mow" class="img-fluid" />
+        <h5 class="text-center">
+            Full-Service Mow
+        </h5>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-secondary"> Includes cut/weed-eating, edging, trimming, and blowing</li>
+                <li class="list-group-item list-group-item-secondary"><b>Type of Service:</b> Scheduled, Ad-hoc</li>
+                <li class="list-group-item list-group-item-secondary"><b>Schedule Frequency:</b> Weekly, Bi-weekly</li>
+                <li class="list-group-item list-group-item-secondary"><b>Seasons:</b> Spring, Summer</li>
+                <li class="list-group-item list-group-item-secondary"><b>Price:</b> $50+ </li>
+            </ul>
+        </div>
     </div>
-    <div class="col-sm-3 imgcontainer">
-        <img src="images/placeholder-image.png" alt="placeholder" class="img-fluid" />
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
+    <div class="col-sm-3 servicesimgcontainer">
+        <img src="~/images/Full Service Mow.jpg" alt="Full Service Mow" class="img-fluid" />
+        <h5 class="text-center">
+            Full-Service Mow
+        </h5>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-secondary"> Includes cut/weed-eating, edging, trimming, and blowing</li>
+                <li class="list-group-item list-group-item-secondary"><b>Type of Service:</b> Scheduled, Ad-hoc</li>
+                <li class="list-group-item list-group-item-secondary"><b>Schedule Frequency:</b> Weekly, Bi-weekly</li>
+                <li class="list-group-item list-group-item-secondary"><b>Seasons:</b> Spring, Summer</li>
+                <li class="list-group-item list-group-item-secondary"><b>Price:</b> $50+ </li>
+            </ul>
+        </div>
     </div>
-</div>
+    <div class="col-sm-3 servicesimgcontainer">
+        <img src="~/images/Full Service Mow.jpg" alt="Full Service Mow" class="img-fluid" />
+        <h5 class="text-center">
+            Full-Service Mow
+        </h5>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-secondary"> Includes cut/weed-eating, edging, trimming, and blowing</li>
+                <li class="list-group-item list-group-item-secondary"><b>Type of Service:</b> Scheduled, Ad-hoc</li>
+                <li class="list-group-item list-group-item-secondary"><b>Schedule Frequency:</b> Weekly, Bi-weekly</li>
+                <li class="list-group-item list-group-item-secondary"><b>Seasons:</b> Spring, Summer</li>
+                <li class="list-group-item list-group-item-secondary"><b>Price:</b> $50+ </li>
+            </ul>
+        </div>
+
+    </div>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

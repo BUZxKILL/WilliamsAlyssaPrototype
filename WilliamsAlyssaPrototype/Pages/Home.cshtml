@@ -33,19 +33,19 @@
 @* 1 Row - 3 columns 4 wide for images & text under Why Choose Us?*@
 
 <div class="row">
-    <div class="col-sm-4 imgcontainer">
+    <div class="col-sm-4 mt-4">
         <img src="images/Mower.jpg" alt="Lawn Mower" class="img-fluid" />
 
-        <h4>
+        <h4 class="hometextheader">
             Professional Grade Equipment
         </h4>
         <p>
-            We understand that your time and how you spend your money is important. That is why we use professional level equipment to get the job done in a timely and efficient manner.
+            We understand that your time and your money is important. That is why we use professional level equipment to get the job done in a timely and efficient manner.
         </p>
     </div>
-    <div class="col-sm-4 imgcontainer">
+    <div class="col-sm-4 mt-4">
         <img src="images/Seasons.jpg" alt="Changing Seasons" class="img-fluid" />
-        <h4>
+        <h4 class="hometextheader">
             Services for Every Season
         </h4>
         <p>
@@ -53,10 +53,10 @@
             cleaning up your leaves in the fall, or hanging up your christmas lights in the winter - we are here for you!
         </p>
     </div>
-    <div class="col-sm-4 imgcontainer">
+    <div class="col-sm-4 mt-4">
 
         <img src="images/Schedule.jpg" alt="Woman Scheduling" class="img-fluid" />
-        <h4>
+        <h4 class="hometextheader">
             Flexible Scheduling
         </h4>
         <p>
@@ -69,19 +69,19 @@
 
 @*Second Call to Action Button - link to services page*@
 
-<div class="row servicesbanner">
+<div class="row homeservicesbanner">
     <div class="col-sm-12">
-        <button type="button" class ="btn btn-success btn-lg my-homebtn">
-            <h4> Check Out Our Services </h4>
+        <button type="button" class="btn btn-success btn-lg">
+            <h4> Check out our Services </h4>
         </button>
-        
+
     </div>
 </div>
 
 @*Carousel - Before & After Pictures*@
 
 <div class="row carouselbackgrnd">
-    <div class="col-sm-12">
+    <div class="col-sm-12 carouselcol">
         @* The name of the ID must be unique on the page. No spaces allowed in the name. *@
         @* The "slide" class is the visual affect when the images transition from
         one to another. *@
@@ -105,17 +105,17 @@
                 to the images. *@
 
                 @* Duplicate the div because without the 'active' for any other images. *@
-                <div class="carousel-item active">
-                    <img src="~/images/before-after-0.png" alt="Mowing Before and After Picture" class="img-fluid d-block mx-auto" />
+                <div class="carousel-item active p-0">
+                    <img src="~/images/before-after-0.png" alt="Mowing Before and After Picture" class="img-fluid d-flex mx-auto" />
 
                 </div>
 
                 <div class="carousel-item">
-                    <img src="~/images/Before-After-1.png" alt="Leave Cleanup Before and After Picture " class="img-fluid d-block mx-auto" />
+                    <img src="~/images/Before-After-1.png" alt="Leave Cleanup Before and After Picture " class="img-fluid d-flex mx-auto" />
                 </div>
 
                 <div class="carousel-item">
-                    <img src="~/images/Before-After-2.png" alt="Mowing Before and After Picture" class="img-fluid d-block mx-auto" />
+                    <img src="~/images/Before-After-2.png" alt="Mowing Before and After Picture" class="img-fluid d-flex mx-auto" />
                 </div>
 
             </div>
